@@ -71,7 +71,7 @@ function local_boost_dark_render_navbar_output(renderer_base $renderer) {
 
     return $renderer->render_from_template(
         "local_boost_dark/dark-icon",
-        ["enable" => get_config("local_boost_dark", "enable"),]
+        ["enable" => get_config("local_boost_dark", "enable")]
     );
 }
 
