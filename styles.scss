@@ -45,7 +45,7 @@
         border-bottom-color: var(--bs-gray-400, #ced4da);
         color: var(--bs-link-color, #98b6d9) !important;
     }
-    
+
     .communityupdatecontainer {
         background-image: none;
     }
@@ -53,7 +53,7 @@
     .navbar-light .navbar-nav .nav-link:focus {
         color: var(--bs-gray-300, #dee2e6);
     }
-    
+
     // Icons
     .subcategories .coursebox > .info > .coursename a,
     #frontpage-category-names .coursebox > .info > .coursename a,
@@ -83,11 +83,11 @@
         background-image: url([[pix:local_boost_dark|t/collapsed]]);
     }
 }
-@media (prefers-color-scheme: dark) {
-    [data-bs-theme=auto] {
-        // @include local_darkmodecode;
-    }
-}
+//@media (prefers-color-scheme: dark) {
+//    [data-bs-theme=auto] {
+//        @include local_darkmodecode;
+//    }
+//}
 [data-bs-theme=dark] {
     @include local_darkmodecode;
 }
@@ -98,11 +98,11 @@
         background-color: var(--bs-black, #000);
     }
 }
-@media (prefers-color-scheme: dark) {
-    [data-bs-theme=auto] {
-        // @include local_darkmode_theme_classic;
-    }
-}
+//@media (prefers-color-scheme: dark) {
+//    [data-bs-theme=auto] {
+//        @include local_darkmode_theme_classic;
+//    }
+//}
 [data-bs-theme=dark] {
     @include local_darkmode_theme_classic;
 }
@@ -113,11 +113,11 @@
         // color: var(--bs-link-color, #98b6d9) !important;
     }
 }
-@media (prefers-color-scheme: dark) {
-    [data-bs-theme=auto] {
-        // @include local_darkmode_theme_boost;
-    }
-}
+//@media (prefers-color-scheme: dark) {
+//    [data-bs-theme=auto] {
+//        @include local_darkmode_theme_boost;
+//    }
+//}
 [data-bs-theme=dark] {
     @include local_darkmode_theme_boost;
 }
@@ -131,10 +131,10 @@
         background: rgba(var(--bs-gray-300-rgb, 222, 226, 230), .18);
     }
     .block .card-body .content:not(.activityiconcontainer) {
-        background: var(--bs-transparent, #0000);
+        background: var(--bs-transparent, #00000000);
     }
     #region-main {
-        background-color: var(--bs-transparent, #0000) !important;
+        background-color: var(--bs-transparent, #00000000) !important;
     }
     .login-container {
         background-color: var(--bs-gray-1100, #0e0e11);
@@ -142,8 +142,8 @@
     .pagelayout-frontpage #frontpage-available-course-list,
     .pagelayout-frontpage #site-news-forum,
     #frontpage-course-list {
-        background: var(--bs-transparent, #0000);
-        background-color: var(--bs-transparent, #0000);
+        background: var(--bs-transparent, #00000000);
+        background-color: var(--bs-transparent, #00000000);
     }
     #frontpage-available-course-list .coursebox,
     #frontpage-course-list .coursebox,
@@ -164,25 +164,27 @@
     }
     .breadcrumb {
         > li {
-            background-color: var(--bs-gray-700, #495057);
+           // background-color: var(--bs-gray-700, #495057);
+            background: transparent;
             a {
                 color: var(--bs-gray-200, #e9ecef);
             }
         }
         .breadcrumb-item:last-child {
             color: var(--bs-write, #fff);
-            background: var(--bs-gray-800, #393e4f);
+            // background: var(--bs-gray-800, #393e4f);
+            background: transparent;
             &:after {
                 border-left: 20px solid var(--bs-gray-800, #393e4f);
             }
         }
     }
 }
-@media (prefers-color-scheme: dark) {
-    [data-bs-theme=auto] {
-        // @include local_darkmode_theme_academi;
-    }
-}
+//@media (prefers-color-scheme: dark) {
+//    [data-bs-theme=auto] {
+//        @include local_darkmode_theme_academi;
+//    }
+//}
 [data-bs-theme=dark] {
     @include local_darkmode_theme_academi;
 }
@@ -203,11 +205,11 @@
         background-color: rgba(var(--bs-gray-300-rgb, 222, 226, 230), .15);
     }
 }
-@media (prefers-color-scheme: dark) {
-    [data-bs-theme=auto] {
-        // @include local_darkmode_theme_adaptable;
-    }
-}
+//@media (prefers-color-scheme: dark) {
+//    [data-bs-theme=auto] {
+//        @include local_darkmode_theme_adaptable;
+//    }
+//}
 [data-bs-theme=dark] {
     @include local_darkmode_theme_adaptable;
 }
@@ -246,11 +248,30 @@
         }
     }
 }
-@media (prefers-color-scheme: dark) {
-    [data-basename=boost_union][data-bs-theme=auto] {
-        // @include local_darkmode_theme_boost_union;
-    }
-}
+//@media (prefers-color-scheme: dark) {
+//    [data-basename=boost_union][data-bs-theme=auto] {
+//         @include local_darkmode_theme_boost_union;
+//    }
+//}
 [data-basename=boost_union][data-bs-theme=dark] {
     @include local_darkmode_theme_boost_union;
+}
+
+@mixin local_darkmode_theme_boost_training {
+    #page.drawers {
+        div[role=main] {
+            background: #ffffff24;
+        }
+    }
+    .breadcrumb{
+        background-color:transparent !important;
+    }
+}
+//@media (prefers-color-scheme: dark) {
+//    [data-basename=boost_training][data-bs-theme=auto] {
+//        @include local_darkmode_theme_boost_training;
+//    }
+//}
+[data-basename=boost_training][data-bs-theme=dark] {
+    @include local_darkmode_theme_boost_training;
 }
