@@ -24,8 +24,8 @@
 
 defined('MOODLE_INTERNAL') || die;
 
-$plugin->version   = 2025071500;
+$plugin->version   = 2025071501;
 $plugin->requires  = 2022041900;
-$plugin->release   = "1.3.1";
+$plugin->release   = "1.3.2";
 $plugin->maturity  = MATURITY_STABLE;
 $plugin->component = "local_boost_dark";
