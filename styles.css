@@ -1598,6 +1598,10 @@
     --bs-badge-color: #ffffff !important;
 }
 
+[data-basename=boost_union][data-bs-theme=dark] .path-mod-assign [data-region=grade-panel] {
+    color: var(--bs-gray-1000, #1e1e25);
+}
+
 [data-basename=boost_training][data-bs-theme=dark] #page.drawers div[role=main] {
     background: #ffffff24;
 }
