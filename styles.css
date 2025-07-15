@@ -1198,6 +1198,25 @@
     color: var(--bs-gray-1000, #1e1e25);
 }
 
+[data-bs-theme=dark] #page-mod-quiz-edit ul.slots li.section li.activity {
+    background: var(--bs-gray-1000, #1e1e25);
+    color: var(--bs-gray-100, #f8f9fa);
+}
+
+[data-bs-theme=dark] #page-mod-quiz-edit ul.slots li.section li.activity .instancemaxmarkcontainer,
+[data-bs-theme=dark] #page-mod-quiz-edit ul.slots li.section li.activity .inplaceeditable-text {
+    background: var(--bs-gray-800, #1e1e25);
+    color: var(--bs-gray-100, #f8f9fa);
+}
+
+[data-bs-theme=dark] #page-mod-quiz-edit .section .activity .actions {
+    background: transparent;
+}
+
+[data-bs-theme=dark] .que .ablock input[type=radio] + label .btn-link {
+    color: var(--bs-primary-text-emphasis, #6ea8fe);
+}
+
 [data-bs-theme=dark] .alert.alert-info * {
     color: var(--bs-gray-700, #495057);
 }
