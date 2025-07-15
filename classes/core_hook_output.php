@@ -40,9 +40,14 @@ class core_hook_output {
      *
      * @return array
      * @throws coding_exception
+     * @throws dml_exception
      */
     public static function html_attributes() {
         global $CFG;
+
+        if (!get_config("local_boost_dark", "enable")) {
+            return [];
+        }
 
         $theme = $CFG->theme;
         if (isset($_SESSION["SESSION"]->theme)) {
@@ -85,8 +90,13 @@ class core_hook_output {
      * @param before_html_attributes $hook
      * @return void
      * @throws coding_exception
+     * @throws dml_exception
      */
     public static function before_html_attributes(before_html_attributes $hook): void {
+        if (!get_config("local_boost_dark", "enable")) {
+            return;
+        }
+
         $atributes = self::html_attributes();
 
         foreach ($atributes as $id => $value) {
@@ -99,6 +109,10 @@ class core_hook_output {
      * @throws dml_exception
      */
     public static function before_footer_html_generation() {
+        if (!get_config("local_boost_dark", "enable")) {
+            return;
+        }
+
         $css = "
             <style>
                 [data-bs-theme=dark] {
