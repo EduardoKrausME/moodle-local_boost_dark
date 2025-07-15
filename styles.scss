@@ -247,20 +247,6 @@
             }
         }
     }
-    .courseindex .courseindex-item .courseindex-link:hover,
-    .courseindex .courseindex-item .courseindex-link:focus,
-    .courseindex .courseindex-item .courseindex-chevron:hover,
-    .courseindex .courseindex-item .courseindex-chevron:focus,
-    .courseindex .courseindex-item:hover,
-    .courseindex .courseindex-item:focus {
-        color: var(--bs-link-hover-color, #aacbf2) !important;
-    }
-    .activity-item .activity-name-area .activitybadge.badge-none {
-        --bs-badge-color: #ffffff !important;
-    }
-    .path-mod-assign [data-region="grade-panel"] {
-        color: var(--bs-gray-1000, #1e1e25);
-    }
 }
 //@media (prefers-color-scheme: dark) {
 //    [data-basename=boost_union][data-bs-theme=auto] {

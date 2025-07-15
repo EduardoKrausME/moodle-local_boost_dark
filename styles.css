@@ -1063,6 +1063,17 @@
     color: var(--bs-link-color, #98b6d9);
 }
 
+[data-bs-theme=dark] .courseindex .courseindex-item .courseindex-link:hover, [data-bs-theme=dark] .courseindex .courseindex-item .courseindex-link:focus,
+[data-bs-theme=dark] .courseindex .courseindex-item .courseindex-chevron:hover,
+[data-bs-theme=dark] .courseindex .courseindex-item .courseindex-chevron:focus {
+    color: var(--bs-link-hover-color, #aacbf2) !important;
+}
+
+[data-bs-theme=dark] .courseindex .courseindex-item:hover,
+[data-bs-theme=dark] .courseindex .courseindex-item:focus {
+    color: var(--bs-link-hover-color, #aacbf2) !important;
+}
+
 [data-bs-theme=dark] body#page-course-view-remuiformat .course-content .sections #section-0 .general-section .activities-wrapper .general-section-activities .activity:not(.modtype_label) {
     background: var(--bs-main-navbar-background, #393e4f);
     border-color: var(--bs-black, #000);
@@ -1179,6 +1190,14 @@
     filter: invert(1);
 }
 
+[data-bs-theme=dark] body#page-question-type-multichoice div[id^=fitem_id_] {
+    background: var(--bs-gray-1100, #0e0e11) !important;
+}
+
+[data-bs-theme=dark] .path-mod-assign [data-region=grade-panel] {
+    color: var(--bs-gray-1000, #1e1e25);
+}
+
 [data-bs-theme=dark] .alert.alert-info * {
     color: var(--bs-gray-700, #495057);
 }
@@ -1262,6 +1281,10 @@
 
 [data-bs-theme=dark] .activity-item {
     background-color: var(--bs-transparent, #000000 0);
+}
+
+[data-bs-theme=dark] .activity-item .activity-name-area .activitybadge.badge-none {
+    --bs-badge-color: #ffffff !important;
 }
 
 [data-bs-theme=dark] .activity-item .activity-completion button.btn,
@@ -1583,23 +1606,6 @@
     [data-basename=boost_union][data-bs-theme=dark] #course-category-listings.columns-3 #course-detail > div {
         background-color: transparent;
     }
-}
-
-[data-basename=boost_union][data-bs-theme=dark] .courseindex .courseindex-item .courseindex-link:hover,
-[data-basename=boost_union][data-bs-theme=dark] .courseindex .courseindex-item .courseindex-link:focus,
-[data-basename=boost_union][data-bs-theme=dark] .courseindex .courseindex-item .courseindex-chevron:hover,
-[data-basename=boost_union][data-bs-theme=dark] .courseindex .courseindex-item .courseindex-chevron:focus,
-[data-basename=boost_union][data-bs-theme=dark] .courseindex .courseindex-item:hover,
-[data-basename=boost_union][data-bs-theme=dark] .courseindex .courseindex-item:focus {
-    color: var(--bs-link-hover-color, #aacbf2) !important;
-}
-
-[data-basename=boost_union][data-bs-theme=dark] .activity-item .activity-name-area .activitybadge.badge-none {
-    --bs-badge-color: #ffffff !important;
-}
-
-[data-basename=boost_union][data-bs-theme=dark] .path-mod-assign [data-region=grade-panel] {
-    color: var(--bs-gray-1000, #1e1e25);
 }
 
 [data-basename=boost_training][data-bs-theme=dark] #page.drawers div[role=main] {
