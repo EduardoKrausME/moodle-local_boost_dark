@@ -631,7 +631,7 @@
 [data-bs-theme=dark] #addcontrols input,
 [data-bs-theme=dark] #page-mod-forum-index .subscription .helplink:nth-of-type(1) a,
 [data-bs-theme=dark] #page-mod-forum-view .subscription .helplink a {
-    background-color: #002db3;
+    background-color: var(--bs-primary, #002db3);
     color: #e6eaf7;
     border-color: none;
 }

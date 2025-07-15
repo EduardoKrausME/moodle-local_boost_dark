@@ -116,6 +116,8 @@ class core_hook_output {
         $css = "
             <style>
                 [data-bs-theme=dark] {
+                    --bs-primary:       " . self::get_config("bs-primary", "#0d6efd") . "            !important;
+                    --color_primary:    " . self::get_config("bs-primary", "#0d6efd") . "            !important;
                     --bs-write:         " . self::get_config("bs-write", "#fff") . "                 !important;
                     --bs-write-rgb:     " . self::get_config("bs-write-rgb", "255, 255, 255") . "    !important;
                     --bs-gray-100:      " . self::get_config("bs-gray-100", "#f8f9fa") . "           !important;

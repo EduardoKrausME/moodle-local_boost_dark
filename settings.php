@@ -39,6 +39,7 @@ if ($hassiteconfig) {
     $settings->add($setting);
 
     $colors = [
+        "bs-primary" => "#0d6efd",
         "bs-write" => "#ffffff",
         "bs-gray-100" => "#f8f9fa",
         "bs-gray-200" => "#e9ecef",
