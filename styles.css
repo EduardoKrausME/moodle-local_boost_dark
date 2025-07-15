@@ -885,6 +885,18 @@
     background-color: rgba(var(--bs-write-rgb, 255, 255, 255), 0.22) !important;
 }
 
+[data-bs-theme=dark] .tox .tox-pop.tox-pop--top::after {
+    border-color: transparent transparent var(--bs-gray-700, #495057) transparent;
+}
+
+[data-bs-theme=dark] .tox .tox-pop__dialog {
+    background-color: var(--bs-gray-700, #495057);
+}
+
+[data-bs-theme=dark] .tox .tox-pop__dialog .tox-tbtn__select-label {
+    color: var(--bs-gray-200, #e9ecef) !important;
+}
+
 [data-bs-theme=dark] .modal .modal-content,
 [data-bs-theme=dark] .modal .moodle-dialogue-wrap, [data-bs-theme=dark] .modal.shadow,
 [data-bs-theme=dark] .moodle-dialogue .modal-content,
