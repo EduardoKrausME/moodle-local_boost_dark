@@ -101,7 +101,7 @@ class core_hook_output {
     public static function before_footer_html_generation() {
         $css = "
             <style>
-                :root {
+                [data-bs-theme=dark] {
                     --bs-write:         " . self::get_config("bs-write", "#fff") . "                 !important;
                     --bs-write-rgb:     " . self::get_config("bs-write-rgb", "255, 255, 255") . "    !important;
                     --bs-gray-100:      " . self::get_config("bs-gray-100", "#f8f9fa") . "           !important;
