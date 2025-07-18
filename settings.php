@@ -40,7 +40,7 @@ if ($hassiteconfig) {
 
     $colors = [
         "bs-primary" => "#0d6efd",
-        "bs-write" => "#ffffff",
+        "bs-white" => "#ffffff",
         "bs-gray-100" => "#f8f9fa",
         "bs-gray-200" => "#e9ecef",
         "bs-gray-300" => "#dee2e6",

@@ -118,8 +118,8 @@ class core_hook_output {
                 [data-bs-theme=dark] {
                     --bs-primary:       " . self::get_config("bs-primary", "#0d6efd") . "            !important;
                     --color_primary:    " . self::get_config("bs-primary", "#0d6efd") . "            !important;
-                    --bs-write:         " . self::get_config("bs-write", "#fff") . "                 !important;
-                    --bs-write-rgb:     " . self::get_config("bs-write-rgb", "255, 255, 255") . "    !important;
+                    --bs-white:         " . self::get_config("bs-white", "#fff") . "                 !important;
+                    --bs-white-rgb:     " . self::get_config("bs-white-rgb", "255, 255, 255") . "    !important;
                     --bs-gray-100:      " . self::get_config("bs-gray-100", "#f8f9fa") . "           !important;
                     --bs-gray-100-rgb:  " . self::get_config("bs-gray-100-rgb", "248, 249, 250") . " !important;
                     --bs-gray-200:      " . self::get_config("bs-gray-200", "#e9ecef") . "           !important;

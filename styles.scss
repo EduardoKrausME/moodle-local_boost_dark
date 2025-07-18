@@ -125,7 +125,7 @@
 // theme academi
 @mixin local_darkmode_theme_academi {
     .kraus-layout-dark .dark-mode path {
-        fill: var(--bs-write, #fff);
+        fill: var(--bs-white, #fff);
     }
     .moremenu .nav.nav-tabs .nav-item .nav-link {
         background: rgba(var(--bs-gray-300-rgb, 222, 226, 230), .18);
@@ -148,7 +148,7 @@
     #frontpage-available-course-list .coursebox,
     #frontpage-course-list .coursebox,
     .course-search-result .coursebox {
-        background: rgba(var(--bs-write-rgb, 255, 255, 255), .07);
+        background: rgba(var(--bs-white-rgb, 255, 255, 255), .07);
         border-bottom: none;
     }
     #frontpage-available-course-list,
@@ -156,7 +156,7 @@
     #frontpage-category-combo,
     #frontpage-category-names,
     #site-news-forum {
-        background: rgba(var(--bs-write-rgb, 255, 255, 255), .07);
+        background: rgba(var(--bs-white-rgb, 255, 255, 255), .07);
         border-bottom: none;
     }
     .pagelayout-frontpage #page #page-content .box form {
@@ -171,7 +171,7 @@
             }
         }
         .breadcrumb-item:last-child {
-            color: var(--bs-write, #fff);
+            color: var(--bs-white, #fff);
             // background: var(--bs-gray-800, #393e4f);
             background: transparent;
             &:after {
@@ -196,7 +196,7 @@
         background-color: rgba(var(--bs-gray-100-rgb, 248, 249, 250), .11);
     }
     .secondary-navigation {
-        background-color: rgba(var(--bs-write-rgb, 255, 255, 255), .11);
+        background-color: rgba(var(--bs-white-rgb, 255, 255, 255), .11);
     }
     #adaptable-page-header-wrapper #main-navbar {
         background-color: var(--bs-main-navbar-background, #393e4f);

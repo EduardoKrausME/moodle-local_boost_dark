@@ -25,7 +25,7 @@
 defined('MOODLE_INTERNAL') || die;
 
 $colors = [
-    "bs-write" => "#fff",
+    "bs-white" => "#fff",
     "bs-gray-100" => "#f8f9fa",
     "bs-gray-200" => "#e9ecef",
     "bs-gray-300" => "#dee2e6",
