@@ -38,7 +38,7 @@ function xmldb_local_boost_dark_upgrade($oldversion) {
         upgrade_plugin_savepoint(true, 2025012700, 'local', 'boost_dark');
     }
 
-    if($oldversion < 2025071800){
+    if ($oldversion < 2025071800) {
         $value = get_config("local_boost_dark", "bs-write");
         set_config("bs-white", $value, "local_boost_dark");
 
