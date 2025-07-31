@@ -242,12 +242,6 @@
     transition: all 0.3s ease;
 }
 
-[data-bs-theme=dark] .card:hover {
-    background-color: #2a2a3f;
-    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.6);
-    transform: translateY(-2px);
-}
-
 [data-bs-theme=dark] .card .card-header {
     background-color: rgba(255, 255, 255, 0.02);
     /* Leve separação visual */
