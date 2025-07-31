@@ -108,7 +108,7 @@
 .dark-animation *,
 .dark-animation *::before,
 .dark-animation *::after {
-    transition: all 0.4s ease !important;
+    transition: all 0.2s ease !important;
 }
 
 [data-bs-theme=dark] {
