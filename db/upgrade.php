@@ -26,9 +26,7 @@
  * Upgrade file.
  *
  * @param int $oldversion
- *
  * @return bool
- *
  * @throws Exception
  */
 function xmldb_local_boost_dark_upgrade($oldversion) {
