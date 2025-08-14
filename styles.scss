@@ -257,7 +257,7 @@
     @include local_darkmode_theme_boost_union;
 }
 
-@mixin local_darkmode_theme_boost_training {
+@mixin local_darkmode_theme_eadtraining {
     #page.drawers {
         div[role=main] {
             background: #ffffff24;
@@ -269,9 +269,9 @@
 }
 //@media (prefers-color-scheme: dark) {
 //    [data-basename=boost_training][data-bs-theme=auto] {
-//        @include local_darkmode_theme_boost_training;
+//        @include local_darkmode_theme_eadtraining;
 //    }
 //}
 [data-basename=boost_training][data-bs-theme=dark] {
-    @include local_darkmode_theme_boost_training;
+    @include local_darkmode_theme_eadtraining;
 }
