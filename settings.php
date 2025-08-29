@@ -21,7 +21,7 @@
  * Moodle's new Boost theme engine
  *
  * @package   local_boost_dark
- * @copyright 2025 Eduardo kraus (http://eduardokraus.com)
+ * @copyright 2025 Eduardo Kraus {@link https://eduardokraus.com}
  * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 defined('MOODLE_INTERNAL') || die;
