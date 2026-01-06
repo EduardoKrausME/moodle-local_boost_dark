@@ -26,6 +26,7 @@ namespace local_boost_dark;
 
 use coding_exception;
 use core\hook\output\before_html_attributes;
+use core\hook\output\before_footer_html_generation;
 use dml_exception;
 
 /**
@@ -108,7 +109,7 @@ class core_hook_output {
      * Function before_footer_html_generation
      * @throws dml_exception
      */
-    public static function before_footer_html_generation() {
+    public static function before_footer_html_generation(before_footer_html_generation $hook): void {
         if (!get_config("local_boost_dark", "enable")) {
             return;
         }
@@ -158,7 +159,7 @@ class core_hook_output {
                 }
             </style>";
         $css = preg_replace('/\s+/', "", $css);
-        echo $css;
+        $hook->add_html($css);
     }
 
     /**
