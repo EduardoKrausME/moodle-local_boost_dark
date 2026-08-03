@@ -1,0 +1,23 @@
+# (RFC §4.1). Authors update their listing with an ordinary commit; camp
+# ingests and hash-pins it at each tagged release. Listing for local_boost_dark.
+
+name: "Boost Dark"
+summary: "Add a refined dark experience to the Boost theme for greater visual comfort."
+description: |
+  Add a refined dark experience to the Boost theme for greater visual comfort.
+
+  Boost Dark Mode is a Moodle plugin that adds a dark mode button to the Boost theme and its child themes, offering a more comfortable visual experience for users, especially in low-light environments.
+
+  Key capabilities:
+  - Activates a dark mode button in the Boost theme header.
+  - Saves the user's dark mode preference using their preferences, ensuring settings remain consistent across browsers.
+  - Simple and lightweight, with no interference in any standard Boost functionality.
+
+  Supported Moodle versions in the supplied plugin list: 4.0 - 5.0.
+
+labels:
+  - fully-free
+category: "themes"
+links:
+  docs: https://github.com/EduardoKrausME/moodle-local_boost_dark#readme
+  issues: https://github.com/EduardoKrausME/moodle-local_boost_dark/issues
