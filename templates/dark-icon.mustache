@@ -23,7 +23,9 @@
 
 <div class="kraus-layout-dark" style="order:-1;">
     {{#enable}}
-        <a class="dark-mode nav-link dark-lua" href="#">
+        <a class="dark-mode nav-link dark-lua" href="#"
+           title="{{#str}} darkmode, local_boost_dark {{/str}}"
+           aria-label="{{#str}} darkmode, local_boost_dark {{/str}}">
             <svg style="width:19px;height:19px" enable-background="new 0 0 128 128" viewBox="0 0 128 128"
                  xmlns="http://www.w3.org/2000/svg">
                 <path fill="currentColor" d="m64.823 128c-17.085
@@ -41,7 +43,9 @@
             </svg>
         </a>
     {{/enable}}
-    <a class="light-mode nav-link dark-sol" href="#">
+    <a class="light-mode nav-link dark-sol" href="#"
+       title="{{#str}} lightmode, local_boost_dark {{/str}}"
+       aria-label="{{#str}} lightmode, local_boost_dark {{/str}}">
         <svg style="width:19px;height:19px" enable-background="new 0 0 128 128" viewBox="0 0 128 128"
              xmlns="http://www.w3.org/2000/svg">
             <path fill="currentColor" d="m55.021 128v-24.072h17.958v24.072zm-42.631-25.098
