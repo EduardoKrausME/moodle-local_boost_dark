@@ -9,7 +9,7 @@
 }
 //
 // import boost_magnific dark mode style
-@import "../../theme/boost_magnific/style/dark-mode";
+@import "style/dark-mode";
 
 @mixin local_darkmodecode {
     .custom-select,
@@ -32,6 +32,14 @@
     }
     .fp-pathbar .fp-path-folder {
         background: url('[[pix:local_boost_dark|dark/path_folder]]') left 3px no-repeat;
+    }
+    .filemanager {
+        .fp-thumbnail img[src*="/core/"][src*="/f/"],
+        .fp-icon img[src*="/core/"][src*="/f/"],
+        .fp-thumbnail img[src*="component=core"][src*="image=f%2f" i],
+        .fp-icon img[src*="component=core"][src*="image=f%2f" i] {
+            filter: invert(1);
+        }
     }
     .navbar.navbar-expand .navbar-nav .nav-link {
         color: var(--bs-link-color, #98b6d9) !important;

@@ -157,6 +157,12 @@ class core_hook_output {
                     --bs-text-color:           " . self::get_config("bs-text-color", "#cbd0d4") . "                 !important;
                     --bs-text-color-rgb:       " . self::get_config("bs-text-color-rgb", "203, 208, 212") . "       !important;
                 }
+                [data-bs-theme=dark] .filemanager .fp-thumbnail img[src*=\"/core/\"][src*=\"/f/\"],
+                [data-bs-theme=dark] .filemanager .fp-icon img[src*=\"/core/\"][src*=\"/f/\"],
+                [data-bs-theme=dark] .filemanager .fp-thumbnail img[src*=\"component=core\"][src*=\"image=f%2f\" i],
+                [data-bs-theme=dark] .filemanager .fp-icon img[src*=\"component=core\"][src*=\"image=f%2f\" i] {
+                    filter: invert(1);
+                }
             </style>";
         $css = preg_replace('/\s+/', "", $css);
         $hook->add_html($css);
