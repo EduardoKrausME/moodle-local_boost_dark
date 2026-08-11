@@ -315,3 +315,49 @@
         }
     }
 }
+
+// Keep Moodle User Tour steps readable in dark mode across Moodle versions.
+[data-bs-theme=dark] {
+    span[data-flexitour="container"] {
+        .modal-content {
+            color: var(--bs-text-color, #cbd0d4) !important;
+            background-color: var(--bs-gray-800, #191a1e) !important;
+            border-color: var(--bs-gray-900, #2e3134) !important;
+        }
+
+        .modal-header,
+        .modal-footer {
+            border-color: var(--bs-gray-900, #2e3134) !important;
+        }
+
+        .modal-title,
+        .modal-body {
+            color: var(--bs-text-color, #cbd0d4) !important;
+        }
+
+        &[x-placement^="top"] div[data-role="arrow"] {
+            border-top-color: var(--bs-gray-900, #2e3134);
+            &:after {
+                border-top-color: var(--bs-gray-800, #191a1e);
+            }
+        }
+        &[x-placement^="bottom"] div[data-role="arrow"] {
+            border-bottom-color: var(--bs-gray-900, #2e3134);
+            &:after {
+                border-bottom-color: var(--bs-gray-800, #191a1e);
+            }
+        }
+        &[x-placement^="left"] div[data-role="arrow"] {
+            border-left-color: var(--bs-gray-900, #2e3134);
+            &:after {
+                border-left-color: var(--bs-gray-800, #191a1e);
+            }
+        }
+        &[x-placement^="right"] div[data-role="arrow"] {
+            border-right-color: var(--bs-gray-900, #2e3134);
+            &:after {
+                border-right-color: var(--bs-gray-800, #191a1e);
+            }
+        }
+    }
+}
