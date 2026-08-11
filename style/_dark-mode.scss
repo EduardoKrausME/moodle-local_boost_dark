@@ -804,6 +804,12 @@
     .que .info {
         background-color: var(--bs-gray-800, #393e4f);
     }
+    .path-mod-quiz #mod_quiz_navblock .qnbutton.blocked .trafficlight,
+    .path-mod-quiz #mod_quiz_navblock .qnbutton.complete .trafficlight,
+    .path-mod-quiz #mod_quiz_navblock .qnbutton.answersaved .trafficlight,
+    .path-mod-quiz #mod_quiz_navblock .qnbutton.requiresgrading .trafficlight {
+        background-color: transparent;
+    }
     .que .info,
     .path-mod-quiz .qnbutton.thispage .thispageholder {
         border-color: var(--bs-gray-700, #495057);

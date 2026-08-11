@@ -1052,6 +1052,12 @@
 [data-bs-theme=dark] .que .info {
   background-color: var(--bs-gray-800, #393e4f);
 }
+[data-bs-theme=dark] .path-mod-quiz #mod_quiz_navblock .qnbutton.blocked .trafficlight,
+[data-bs-theme=dark] .path-mod-quiz #mod_quiz_navblock .qnbutton.complete .trafficlight,
+[data-bs-theme=dark] .path-mod-quiz #mod_quiz_navblock .qnbutton.answersaved .trafficlight,
+[data-bs-theme=dark] .path-mod-quiz #mod_quiz_navblock .qnbutton.requiresgrading .trafficlight {
+  background-color: transparent;
+}
 [data-bs-theme=dark] .que .info,
 [data-bs-theme=dark] .path-mod-quiz .qnbutton.thispage .thispageholder {
   border-color: var(--bs-gray-700, #495057);
