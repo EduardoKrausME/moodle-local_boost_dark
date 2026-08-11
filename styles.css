@@ -1405,4 +1405,15 @@
   background-color: transparent !important;
 }
 
+[data-bs-theme=dark] .block-add {
+  color: var(--bs-gray-100, #f8f9fa);
+  border-color: rgba(var(--bs-gray-300-rgb, 222, 226, 230), 0.55);
+}
+[data-bs-theme=dark] .block-add .pluscontainer {
+  border-color: currentColor;
+}
+[data-bs-theme=dark] .block-add:hover, [data-bs-theme=dark] .block-add:focus {
+  color: var(--bs-write, #fff);
+}
+
 /*# sourceMappingURL=styles.css.map */

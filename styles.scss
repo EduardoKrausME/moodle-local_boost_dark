@@ -7,8 +7,6 @@
         display: none !important;
     }
 }
-//
-// import boost_magnific dark mode style
 @import "style/dark-mode";
 
 @mixin local_darkmodecode {
@@ -282,4 +280,21 @@
 //}
 [data-basename=boost_training][data-bs-theme=dark] {
     @include local_darkmode_theme_eadtraining;
+}
+
+// Keep the Moodle 5.1 add-block control readable in dark mode.
+[data-bs-theme=dark] {
+    .block-add {
+        color: var(--bs-gray-100, #f8f9fa);
+        border-color: rgba(var(--bs-gray-300-rgb, 222, 226, 230), .55);
+
+        .pluscontainer {
+            border-color: currentColor;
+        }
+
+        &:hover,
+        &:focus {
+            color: var(--bs-write, #fff);
+        }
+    }
 }
