@@ -298,3 +298,20 @@
         }
     }
 }
+
+// Keep the Course overview sorting dropdown readable in dark mode.
+[data-bs-theme=dark] {
+    .block-myoverview #sortingdropdown {
+        color: var(--bs-gray-100, #f8f9fa);
+        border-color: var(--bs-gray-600, #6c757d);
+
+        &:hover,
+        &:focus,
+        &:active,
+        &[aria-expanded="true"] {
+            color: var(--bs-write, #fff);
+            background-color: var(--bs-gray-800, #393e4f);
+            border-color: var(--bs-gray-500, #adb5bd);
+        }
+    }
+}
