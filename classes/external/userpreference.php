@@ -57,6 +57,13 @@ class userpreference extends \external_api {
     public static function save($darkmode) {
         global $CFG;
 
+        $params = self::validate_parameters(self::save_parameters(), [
+            "darkmode" => $darkmode,
+        ]);
+        $darkmode = $params["darkmode"];
+
+        self::validate_context(\context_system::instance());
+
         // Check if the user is a guest (not logged in).
         if (isguestuser()) {
             // Calculate the expiration date (1 year from now).
