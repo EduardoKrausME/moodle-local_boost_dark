@@ -22,6 +22,8 @@
  * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
+defined('MOODLE_INTERNAL') || die;
+
 $string['boost_dark:manage'] = 'Boost Dark';
 $string['bs_black'] = 'Black color';
 $string['bs_black_desc'] = 'Pure black color';
