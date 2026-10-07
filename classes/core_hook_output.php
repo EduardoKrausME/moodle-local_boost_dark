@@ -114,7 +114,7 @@ class core_hook_output {
      * @throws dml_exception
      */
     public static function before_footer_html_generation(before_footer_html_generation $hook): void {
-        if (!get_config("local_boost_dark", "enable")) {
+        if (self::html_attributes() === []) {
             return;
         }
 
