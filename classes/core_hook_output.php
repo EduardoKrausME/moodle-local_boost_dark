@@ -55,11 +55,6 @@ class core_hook_output {
             $theme = $_SESSION["SESSION"]->theme;
         }
 
-        // Native support.
-        if ($theme == "boost_magnific" || $theme == "degrade") {
-            return [];
-        }
-
         if (in_array(get_config("theme_boost", "defaultcolourmode"), ["dark", "auto"], true)) {
             return [];
         }
