@@ -60,6 +60,10 @@ class core_hook_output {
             return [];
         }
 
+        if (in_array(get_config("theme_boost", "defaultcolourmode"), ["dark", "auto"], true)) {
+            return [];
+        }
+
         // Upon request, I have removed support.
         if ($theme == "moove") {
             return [];
