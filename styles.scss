@@ -397,3 +397,23 @@
         }
     }
 }
+
+// Preserve section navigation contrast when the course displays one section per page.
+// Moodle renders previous and next section names as links inside .section-navigation.
+[data-bs-theme=dark] {
+    .course-content .single-section .section-navigation {
+        a {
+            color: var(--bs-link-color, #98b6d9) !important;
+
+            &:hover,
+            &:focus {
+                color: var(--bs-link-hover-color, #aacbf2) !important;
+            }
+        }
+
+        // Hidden sections remain visually muted without losing readability.
+        a.dimmed_text {
+            color: var(--bs-gray-500, #adb5bd) !important;
+        }
+    }
+}

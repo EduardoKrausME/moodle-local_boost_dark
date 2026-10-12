@@ -1515,4 +1515,16 @@
   border-right-color: var(--bs-gray-800, #191a1e);
 }
 
+/* Improve contrast for section navigation in courses showing one section per page. */
+[data-bs-theme=dark] .course-content .single-section .section-navigation a {
+  color: var(--bs-link-color, #98b6d9) !important;
+}
+[data-bs-theme=dark] .course-content .single-section .section-navigation a:hover,
+[data-bs-theme=dark] .course-content .single-section .section-navigation a:focus {
+  color: var(--bs-link-hover-color, #aacbf2) !important;
+}
+[data-bs-theme=dark] .course-content .single-section .section-navigation a.dimmed_text {
+  color: var(--bs-gray-500, #adb5bd) !important;
+}
+
 /*# sourceMappingURL=styles.css.map */
