@@ -958,6 +958,12 @@
 [data-bs-theme=dark] .path-mod .activity-header:not(:empty) {
   background-color: var(--bs-main-navbar-background, #393e4f);
 }
+[data-bs-theme=dark] .path-mod .activity-details:not(:empty) {
+  background-color: var(--bs-main-navbar-background, #393e4f);
+}
+[data-bs-theme=dark] .path-mod .activity-dates .date-item {
+  color: var(--bs-body-color);
+}
 [data-bs-theme=dark] .checklist-extendedit .checklist-edititem {
   border-color: rgba(var(--bs-gray-300-rgb, 222, 226, 230), 0.35);
 }
