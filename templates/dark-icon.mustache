@@ -21,15 +21,13 @@
     {}
 }}
 
-<div class="kraus-layout-dark" style="order:-1;">
+<div class="kraus-layout-dark">
     {{#enable}}
         <a class="dark-mode nav-link dark-sol" href="#"
            title="{{#str}} darkmode, local_boost_dark {{/str}}"
-           aria-label="{{#str}} darkmode, local_boost_dark {{/str}}"
-           style="display:flex;align-items:center;gap:8px;padding:5px 12px 5px 6px;border-radius:999px;text-decoration:none;line-height:1;box-sizing:border-box;">
-            <span aria-hidden="true"
-                  style="display:flex;align-items:center;justify-content:center;width:32px;height:32px;flex:0 0 32px;border-radius:50%;background:#edf5ff;color:#2d7ff9;">
-                <svg style="width:18px;height:18px" enable-background="new 0 0 128 128" viewBox="0 0 128 128"
+           aria-label="{{#str}} darkmode, local_boost_dark {{/str}}">
+            <span aria-hidden="true">
+                <svg enable-background="new 0 0 128 128" viewBox="0 0 128 128"
                      xmlns="http://www.w3.org/2000/svg">
                     <path fill="currentColor" d="m55.021 128v-24.072h17.958v24.072zm-42.631-25.098
                         17.012-17.027 12.705 12.695-17.013 17.03zm73.492-4.323 12.697-12.697 17.021 17.025-12.693
@@ -42,18 +40,16 @@
                         12.694-17.018 17.027zm-30.861-5.348v-24.072h17.958v24.072z"/>
                 </svg>
             </span>
-            <span style="display:none;color:#14213d;font-size:13px;font-weight:600;white-space:nowrap;">
+            <span class="mode-label">
                 {{#str}} lightmode, local_boost_dark {{/str}}
             </span>
         </a>
     {{/enable}}
     <a class="light-mode nav-link dark-lua" href="#"
        title="{{#str}} lightmode, local_boost_dark {{/str}}"
-       aria-label="{{#str}} lightmode, local_boost_dark {{/str}}"
-       style="align-items:center;gap:8px;padding:5px 12px 5px 6px;border-radius:999px;text-decoration:none;line-height:1;box-sizing:border-box;">
-        <span aria-hidden="true"
-              style="display:flex;align-items:center;justify-content:center;width:32px;height:32px;flex:0 0 32px;border-radius:50%;background:#2b3950;color:#86b5ff;">
-            <svg style="width:18px;height:18px" enable-background="new 0 0 128 128" viewBox="0 0 128 128"
+       aria-label="{{#str}} lightmode, local_boost_dark {{/str}}">
+        <span aria-hidden="true">
+            <svg enable-background="new 0 0 128 128" viewBox="0 0 128 128"
                  xmlns="http://www.w3.org/2000/svg">
                 <path fill="currentColor" d="m64.823 128c-17.085
                     0-33.789-6.941-45.826-19.045-12.248-12.246-18.997-28.562-18.997-45.935s6.749-33.687
@@ -69,7 +65,7 @@
                     4.861 24.277 13.688 33.1 8.675 8.724 20.703 13.722 33.009 13.722h.104.144z"/>
             </svg>
         </span>
-        <span style="display:none;color:#f5f7fb;font-size:13px;font-weight:600;white-space:nowrap;">
+        <span class="mode-label">
             {{#str}} darkmode, local_boost_dark {{/str}}
         </span>
     </a>
