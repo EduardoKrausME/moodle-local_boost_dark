@@ -74,4 +74,3 @@ function local_boost_dark_render_navbar_output(renderer_base $renderer) {
         ["enable" => get_config("local_boost_dark", "enable")]
     );
 }
-
