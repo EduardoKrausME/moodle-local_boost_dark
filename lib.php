@@ -75,11 +75,3 @@ function local_boost_dark_render_navbar_output(renderer_base $renderer) {
     );
 }
 
-/**
- * Function before_footer_html_generation
- *
- * @throws dml_exception
- */
-function before_footer_html_generation() {
-    core_hook_output::before_footer_html_generation();
-}
