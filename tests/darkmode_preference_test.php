@@ -14,7 +14,8 @@
 // You should have received a copy of the GNU General Public License
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 //
-///**
+//
+/**
  * Tests for resolving dark mode preferences for visitors and authenticated users.
  *
  * @package   local_boost_dark
