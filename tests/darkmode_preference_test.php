@@ -27,9 +27,9 @@ namespace local_boost_dark;
 /**
  * Dark mode preference tests.
  *
- * @covers \\local_boost_dark\\darkmode_preference
+ * @covers \local_boost_dark\darkmode_preference
  */
-final class darkmode_preference_test extends \\advanced_testcase {
+final class darkmode_preference_test extends \advanced_testcase {
     /**
      * Legacy auto and unsupported values must not produce half-dark pages.
      */
