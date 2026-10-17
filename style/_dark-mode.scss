@@ -1024,14 +1024,6 @@
         fill: var(--text_color);
     }
 }
-@media (prefers-color-scheme: dark) {
-    [data-bs-theme=auto] {
-        body, html {
-            // color-scheme: dark;
-        }
-        // @include darkmodecode;
-    }
-}
 [data-bs-theme=dark] {
     color-scheme: dark;
     @include darkmodecode;

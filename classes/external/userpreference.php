@@ -64,14 +64,19 @@ class userpreference extends \external_api {
 
         self::validate_context(\context_system::instance());
 
-        // Check if the user is a guest (not logged in).
-        if (isguestuser()) {
-            // Calculate the expiration date (1 year from now).
-            $expiry = time() + (365 * 24 * 60 * 60); // 1 year in seconds.
+        if (!in_array($darkmode, ["light", "dark"], true)) {
+            throw new \\invalid_parameter_exception("Invalid dark mode preference.");
+        }
 
-            // Set the cookie.
-            setcookie("darkmode", $darkmode, $expiry, $CFG->sessioncookiepath);
-
+        // Anonymous and guest users have no persistent preference record.
+        if (\\local_boost_dark\\darkmode_preference::is_visitor()) {
+            setcookie("darkmode", $darkmode, [
+                "expires" => time() + (365 * 24 * 60 * 60),
+                "path" => $CFG->sessioncookiepath ?: "/",
+                "secure" => str_starts_with($CFG->wwwroot, "https://"),
+                "httponly" => true,
+                "samesite" => "Lax",
+            ]);
             return ["status" => true];
         }
 

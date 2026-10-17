@@ -123,11 +123,6 @@
         background-image: url([[pix:local_boost_dark|t/collapsed]]);
     }
 }
-//@media (prefers-color-scheme: dark) {
-//    [data-bs-theme=auto] {
-//        @include local_darkmodecode;
-//    }
-//}
 [data-bs-theme=dark] {
     @include local_darkmodecode;
 }
@@ -138,11 +133,6 @@
         background-color: var(--bs-black, #000);
     }
 }
-//@media (prefers-color-scheme: dark) {
-//    [data-bs-theme=auto] {
-//        @include local_darkmode_theme_classic;
-//    }
-//}
 [data-bs-theme=dark] {
     @include local_darkmode_theme_classic;
 }
@@ -153,11 +143,6 @@
         // color: var(--bs-link-color, #98b6d9) !important;
     }
 }
-//@media (prefers-color-scheme: dark) {
-//    [data-bs-theme=auto] {
-//        @include local_darkmode_theme_boost;
-//    }
-//}
 [data-bs-theme=dark] {
     @include local_darkmode_theme_boost;
 }
@@ -220,11 +205,6 @@
         }
     }
 }
-//@media (prefers-color-scheme: dark) {
-//    [data-bs-theme=auto] {
-//        @include local_darkmode_theme_academi;
-//    }
-//}
 [data-bs-theme=dark] {
     @include local_darkmode_theme_academi;
 }
@@ -245,11 +225,6 @@
         background-color: rgba(var(--bs-gray-300-rgb, 222, 226, 230), .15);
     }
 }
-//@media (prefers-color-scheme: dark) {
-//    [data-bs-theme=auto] {
-//        @include local_darkmode_theme_adaptable;
-//    }
-//}
 [data-bs-theme=dark] {
     @include local_darkmode_theme_adaptable;
 }
@@ -288,11 +263,6 @@
         }
     }
 }
-//@media (prefers-color-scheme: dark) {
-//    [data-basename=boost_union][data-bs-theme=auto] {
-//         @include local_darkmode_theme_boost_union;
-//    }
-//}
 [data-basename=boost_union][data-bs-theme=dark] {
     @include local_darkmode_theme_boost_union;
 }
@@ -307,11 +277,6 @@
         background-color:transparent !important;
     }
 }
-//@media (prefers-color-scheme: dark) {
-//    [data-basename=boost_training][data-bs-theme=auto] {
-//        @include local_darkmode_theme_eadtraining;
-//    }
-//}
 [data-basename=boost_training][data-bs-theme=dark] {
     @include local_darkmode_theme_eadtraining;
 }

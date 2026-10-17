@@ -68,19 +68,15 @@ class core_hook_output {
             "data-basename" => $theme,
         ];
 
-        $darkmode = "auto";
-        if (isset($_COOKIE["darkmode"])) {
-            $darkmode = clean_param($_COOKIE["darkmode"], PARAM_TEXT);
-            $return["data-bs-theme"] = $darkmode;
-        }
+        $darkmode = darkmode_preference::current();
 
-        if (!isguestuser()) {
-            $darkmode = get_user_preferences("darkmode", $darkmode);
-            $return["data-bs-theme"] = $darkmode;
+        // Only explicit light and dark values are supported by this plugin.
+        $requestedmode = optional_param("darkmode", "", PARAM_ALPHA);
+        if (in_array($requestedmode, ["light", "dark"], true)) {
+            $darkmode = $requestedmode;
         }
-        if ($darkmode = optional_param("darkmode", false, PARAM_TEXT)) {
-            $return["data-bs-theme"] = $darkmode;
-        }
+        $return["data-bs-theme"] = $darkmode;
+
         return $return;
     }
 
