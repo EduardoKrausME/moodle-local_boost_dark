@@ -8,7 +8,7 @@ This changelog covers only the two most recent published GitHub releases. Each e
 
 - Fixed dark mode preference resolution for anonymous visitors, guest users, and authenticated users (issue #56). Visitors use the `darkmode` cookie, while authenticated users use their saved Moodle user preference.
 - Removed the incomplete automatic dark mode behavior that could leave parts of the interface inconsistently themed. Only explicit `light` and `dark` values are supported; legacy `auto` and invalid values fall back to `light`.
-- Centralized preference resolution in `local_boost_dark\\darkmode_preference` and updated the HTML theme attributes to use the resolved preference.
+- Centralized preference resolution in `local_boost_dark\darkmode_preference` and updated the HTML theme attributes to use the resolved preference.
 - Validated the requested mode before saving it; visitor cookies now include an expiration time, an applicable path, a secure flag for HTTPS sites, `HttpOnly`, and `SameSite=Lax`.
 
 ### Changed
