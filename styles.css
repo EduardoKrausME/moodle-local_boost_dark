@@ -1155,11 +1155,7 @@
 [data-bs-theme=dark] .subcategories .coursebox > .info > .coursename a,
 [data-bs-theme=dark] #frontpage-category-names .coursebox > .info > .coursename a,
 [data-bs-theme=dark] #frontpage-category-combo .coursebox > .info > .coursename a {
-  background-image: url([[pix:local_boost_dark|i/course]]);
-  background-repeat: no-repeat;
-  background-position: left center;
-  background-size: 16px 16px;
-  padding-left: 24px;
+  background-image: none;
 }
 [data-bs-theme=dark] .path-tag .tag-management-box li a.edittag {
   background-image: url([[pix:local_boost_dark|i/settings]]);

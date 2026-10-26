@@ -961,11 +961,7 @@
     .subcategories .coursebox > .info > .coursename a,
     #frontpage-category-names .coursebox > .info > .coursename a,
     #frontpage-category-combo .coursebox > .info > .coursename a {
-        background-image: url([[pix:local_boost_dark|i/course]]);
-        background-repeat: no-repeat;
-        background-position: left center;
-        background-size: 16px 16px;
-        padding-left: 24px;
+        background-image: none;
     }
     .path-tag {
         .tag-management-box li {
