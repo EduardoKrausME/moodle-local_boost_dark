@@ -20,10 +20,6 @@ This does not mean the plugin is going away. At the launch of Moodle 5.3 in Octo
 2. In the upper corner, click the **Dark Mode** icon to toggle between light and dark modes.
 3. The setting will be saved in the user's preferences and automatically applied whenever they return to Moodle.
 
-## 📦 Installation
-
-Visit the plugin page at [https://moodle.org/plugins/local_boost_dark](https://moodle.org/plugins/local_boost_dark) and install the plugin as usual.
-
 ## 🐞 Testing
 
 - Tested only on:
