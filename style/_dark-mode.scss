@@ -953,29 +953,29 @@
     .subcategories .coursebox > .info > .coursename a,
     #frontpage-category-names .coursebox > .info > .coursename a,
     #frontpage-category-combo .coursebox > .info > .coursename a {
-        background-image: url([[pix:theme_boost_magnific|dark/i/course]]);
+        background-image: url([[pix:local_boost_dark|dark/i/course]]);
     }
     .path-tag {
         .tag-management-box li {
             a.edittag {
-                background-image: url([[pix:theme_boost_magnific|dark/i/settings]]);
+                background-image: url([[pix:local_boost_dark|dark/i/settings]]);
             }
             a.flagasinappropriate {
-                background-image: url([[pix:theme_boost_magnific|dark/i/flagged]]);
+                background-image: url([[pix:local_boost_dark|dark/i/flagged]]);
             }
             a.removefrommyinterests {
-                background-image: url([[pix:theme_boost_magnific|dark/t/delete]]);
+                background-image: url([[pix:local_boost_dark|dark/t/delete]]);
             }
             a.addtomyinterests {
-                background-image: url([[pix:theme_boost_magnific|dark/t/add]]);
+                background-image: url([[pix:local_boost_dark|dark/t/add]]);
             }
         }
     }
     .course_category_tree .category.with_children > .info > .categoryname {
-        background-image: url([[pix:theme_boost_magnific|dark/t/expanded);
+        background-image: url([[pix:local_boost_dark|dark/t/expanded);
     }
     .course_category_tree .category.with_children.collapsed > .info > .categoryname {
-        background-image: url([[pix:theme_boost_magnific|dark/t/collapsed]]);
+        background-image: url([[pix:local_boost_dark|dark/t/collapsed]]);
     }
 
     .action-menu .dropdown-subpanel.content-displayed {
