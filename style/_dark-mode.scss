@@ -1,3 +1,46 @@
+.kraus-layout-dark {
+    display: flex;
+    align-items: center;
+    order: -1;
+    .nav-link.dark-mode,
+    .nav-link.light-mode {
+        display: flex;
+        align-items: center;
+        gap: 8px;
+        padding: 5px 0 5px;
+        border-radius: 999px;
+        color: inherit;
+        text-decoration: none;
+        line-height: 1;
+        box-sizing: border-box;
+    }
+    .nav-link.dark-mode > span[aria-hidden="true"],
+    .nav-link.light-mode > span[aria-hidden="true"] {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 32px;
+        height: 32px;
+        flex: 0 0 32px;
+        border-radius: 50%;
+        background: color-mix(in srgb, currentColor 12%, transparent);
+        color: inherit;
+        svg {
+            width: 18px;
+            height: 18px;
+        }
+    }
+    .nav-link .mode-label {
+        display: none;
+        color: inherit;
+        font-size: 13px;
+        font-weight: 600;
+        white-space: nowrap;
+    }
+    .light-mode {
+        display: none !important;
+    }
+}
 @import "dark-mode-root";
 .dark-animation,
 .dark-animation *,
@@ -1027,4 +1070,315 @@
 [data-bs-theme=dark] {
     color-scheme: dark;
     @include darkmodecode;
+}
+
+@mixin local_darkmodecode {
+    .custom-select,
+    select.quickgrade {
+        background: var(--bs-gray-1000, #1e1e25) url('[[pix:local_boost_dark|dark/custom-select]]') right 10px center / 8px 10px no-repeat;
+    }
+    .modal,
+    .moodle-dialogue {
+        .modal-content,
+        .moodle-dialogue-wrap {
+            .modal-header,
+            .moodle-dialogue-hd {
+                .btn-close {
+                    &:before {
+                        background-image: url('[[pix:local_boost_dark|dark/close-button]]');
+                    }
+                }
+            }
+        }
+    }
+    .fp-pathbar .fp-path-folder {
+        background: url('[[pix:local_boost_dark|dark/path_folder]]') left 3px no-repeat;
+    }
+    .filemanager {
+        .fp-thumbnail img[src*="/core/"][src*="/f/"],
+        .fp-icon img[src*="/core/"][src*="/f/"],
+        .fp-thumbnail img[src*="component=core"][src*="image=f%2f" i],
+        .fp-icon img[src*="component=core"][src*="image=f%2f" i] {
+            filter: invert(1);
+        }
+    }
+    .navbar.navbar-expand .navbar-nav .nav-link {
+        color: var(--bs-link-color, #98b6d9) !important;
+    }
+    .moremenu .nav-link.active,
+    .moremenu .nav-link.active:focus,
+    .moremenu .nav-link.active:hover,
+    .moremenu .nav-link:hover,
+    .moremenu .nav-link:focus {
+        background-color: rgba(var(--bs-gray-100-rgb, 248, 249, 250), .11);
+        border-bottom-color: var(--bs-gray-400, #ced4da);
+        color: var(--bs-link-color, #98b6d9) !important;
+    }
+
+    .communityupdatecontainer {
+        background-image: none;
+    }
+    .navbar-light .navbar-nav .nav-link:hover,
+    .navbar-light .navbar-nav .nav-link:focus {
+        color: var(--bs-gray-300, #dee2e6);
+    }
+
+
+}
+[data-bs-theme=dark] {
+    @include local_darkmodecode;
+}
+//
+// theme classic
+@mixin local_darkmode_theme_classic {
+    .navbar-bootswatch {
+        background-color: var(--bs-black, #000);
+    }
+}
+[data-bs-theme=dark] {
+    @include local_darkmode_theme_classic;
+}
+//
+// theme boost
+@mixin local_darkmode_theme_boost {
+    .kraus-layout-dark .light-mode svg path {
+        // color: var(--bs-link-color, #98b6d9) !important;
+    }
+}
+[data-bs-theme=dark] {
+    @include local_darkmode_theme_boost;
+}
+//
+// theme academi
+@mixin local_darkmode_theme_academi {
+    .kraus-layout-dark .dark-mode path {
+        fill: var(--bs-white, #fff);
+    }
+    .moremenu .nav.nav-tabs .nav-item .nav-link {
+        background: rgba(var(--bs-gray-300-rgb, 222, 226, 230), .18);
+    }
+    .block .card-body .content:not(.activityiconcontainer) {
+        background: var(--bs-transparent, #00000000);
+    }
+    #region-main {
+        background-color: var(--bs-transparent, #00000000) !important;
+    }
+    .login-container {
+        background-color: var(--bs-gray-1100, #0e0e11);
+    }
+    .pagelayout-frontpage #frontpage-available-course-list,
+    .pagelayout-frontpage #site-news-forum,
+    #frontpage-course-list {
+        background: var(--bs-transparent, #00000000);
+        background-color: var(--bs-transparent, #00000000);
+    }
+    #frontpage-available-course-list .coursebox,
+    #frontpage-course-list .coursebox,
+    .course-search-result .coursebox {
+        background: rgba(var(--bs-white-rgb, 255, 255, 255), .07);
+        border-bottom: none;
+    }
+    #frontpage-available-course-list,
+    #frontpage-course-list,
+    #frontpage-category-combo,
+    #frontpage-category-names,
+    #site-news-forum {
+        background: rgba(var(--bs-white-rgb, 255, 255, 255), .07);
+        border-bottom: none;
+    }
+    .pagelayout-frontpage #page #page-content .box form {
+        border: none;
+    }
+    .breadcrumb {
+        > li {
+           // background-color: var(--bs-gray-700, #495057);
+            background: transparent;
+            a {
+                color: var(--bs-gray-200, #e9ecef);
+            }
+        }
+        .breadcrumb-item:last-child {
+            color: var(--bs-white, #fff);
+            // background: var(--bs-gray-800, #393e4f);
+            background: transparent;
+            &:after {
+                border-left: 20px solid var(--bs-gray-800, #393e4f);
+            }
+        }
+    }
+}
+[data-bs-theme=dark] {
+    @include local_darkmode_theme_academi;
+}
+//
+// theme adaptable
+@mixin local_darkmode_theme_adaptable {
+    background-color: var(--bs-gray-1100, #0e0e11);
+    .breadcrumb {
+        background-color: rgba(var(--bs-gray-100-rgb, 248, 249, 250), .11);
+    }
+    .secondary-navigation {
+        background-color: rgba(var(--bs-white-rgb, 255, 255, 255), .11);
+    }
+    #adaptable-page-header-wrapper #main-navbar {
+        background-color: var(--bs-main-navbar-background, #393e4f);
+    }
+    #notice.box {
+        background-color: rgba(var(--bs-gray-300-rgb, 222, 226, 230), .15);
+    }
+}
+[data-bs-theme=dark] {
+    @include local_darkmode_theme_adaptable;
+}
+//
+// theme boost_union
+@mixin local_darkmode_theme_boost_union {
+    .form-autocomplete-selection [data-active-selection=true] {
+        box-shadow: none;
+    }
+    a.dimmed,
+    a.dimmed:link,
+    a.dimmed:visited,
+    a.dimmed_text,
+    a.dimmed_text:link,
+    a.dimmed_text:visited,
+    .dimmed_text,
+    .dimmed_text a,
+    .dimmed_text a:link,
+    .dimmed_text a:visited,
+    .usersuspended,
+    .usersuspended a,
+    .usersuspended a:link,
+    .usersuspended a:visited,
+    .dimmed_category,
+    .dimmed_category a {
+        color: var(--bs-gray-500, #adb5bd);
+    }
+    @media (min-width: 1200px) and (max-width: 1600px) {
+        #course-category-listings.columns-3 {
+            background-color: transparent;
+            #category-listing > div,
+            #course-listing > div,
+            #course-detail > div {
+                background-color: transparent;
+            }
+        }
+    }
+}
+[data-basename=boost_union][data-bs-theme=dark] {
+    @include local_darkmode_theme_boost_union;
+}
+
+@mixin local_darkmode_theme_eadtraining {
+    #page.drawers {
+        div[role=main] {
+            background: #ffffff24;
+        }
+    }
+    .breadcrumb{
+        background-color:transparent !important;
+    }
+}
+[data-basename=boost_training][data-bs-theme=dark] {
+    @include local_darkmode_theme_eadtraining;
+}
+
+// Keep the Moodle 5.1 add-block control readable in dark mode.
+[data-bs-theme=dark] {
+    .block-add {
+        color: var(--bs-gray-100, #f8f9fa);
+        border-color: rgba(var(--bs-gray-300-rgb, 222, 226, 230), .55);
+
+        .pluscontainer {
+            border-color: currentColor;
+        }
+
+        &:hover,
+        &:focus {
+            color: var(--bs-write, #fff);
+        }
+    }
+}
+
+// Keep the Course overview sorting dropdown readable in dark mode.
+[data-bs-theme=dark] {
+    .block-myoverview #sortingdropdown {
+        color: var(--bs-gray-100, #f8f9fa);
+        border-color: var(--bs-gray-600, #6c757d);
+
+        &:hover,
+        &:focus,
+        &:active,
+        &[aria-expanded="true"] {
+            color: var(--bs-write, #fff);
+            background-color: var(--bs-gray-800, #393e4f);
+            border-color: var(--bs-gray-500, #adb5bd);
+        }
+    }
+}
+
+// Keep Moodle User Tour steps readable in dark mode across Moodle versions.
+[data-bs-theme=dark] {
+    span[data-flexitour="container"] {
+        .modal-content {
+            color: var(--bs-text-color, #cbd0d4) !important;
+            background-color: var(--bs-gray-800, #191a1e) !important;
+            border-color: var(--bs-gray-900, #2e3134) !important;
+        }
+
+        .modal-header,
+        .modal-footer {
+            border-color: var(--bs-gray-900, #2e3134) !important;
+        }
+
+        .modal-title,
+        .modal-body {
+            color: var(--bs-text-color, #cbd0d4) !important;
+        }
+
+        &[x-placement^="top"] div[data-role="arrow"] {
+            border-top-color: var(--bs-gray-900, #2e3134);
+            &:after {
+                border-top-color: var(--bs-gray-800, #191a1e);
+            }
+        }
+        &[x-placement^="bottom"] div[data-role="arrow"] {
+            border-bottom-color: var(--bs-gray-900, #2e3134);
+            &:after {
+                border-bottom-color: var(--bs-gray-800, #191a1e);
+            }
+        }
+        &[x-placement^="left"] div[data-role="arrow"] {
+            border-left-color: var(--bs-gray-900, #2e3134);
+            &:after {
+                border-left-color: var(--bs-gray-800, #191a1e);
+            }
+        }
+        &[x-placement^="right"] div[data-role="arrow"] {
+            border-right-color: var(--bs-gray-900, #2e3134);
+            &:after {
+                border-right-color: var(--bs-gray-800, #191a1e);
+            }
+        }
+    }
+}
+
+// Preserve section navigation contrast when the course displays one section per page.
+// Moodle renders previous and next section names as links inside .section-navigation.
+[data-bs-theme=dark] {
+    .course-content .single-section .section-navigation {
+        a {
+            color: var(--bs-link-color, #98b6d9) !important;
+
+            &:hover,
+            &:focus {
+                color: var(--bs-link-hover-color, #aacbf2) !important;
+            }
+        }
+
+        // Hidden sections remain visually muted without losing readability.
+        a.dimmed_text {
+            color: var(--bs-gray-500, #adb5bd) !important;
+        }
+    }
 }
