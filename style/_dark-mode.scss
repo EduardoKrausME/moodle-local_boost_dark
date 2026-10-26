@@ -1066,13 +1066,8 @@
     [data-bs-theme=light] .header-menubar #usernavigation .kraus-layout-dark svg path {
         fill: var(--text_color);
     }
-}
-[data-bs-theme=dark] {
-    color-scheme: dark;
-    @include darkmodecode;
-}
 
-@mixin local_darkmodecode {
+    // Additional dark-mode styles.
     .custom-select,
     select.quickgrade {
         background: var(--bs-gray-1000, #1e1e25) url('[[pix:local_boost_dark|dark/custom-select]]') right 10px center / 8px 10px no-repeat;
@@ -1122,11 +1117,10 @@
     .navbar-light .navbar-nav .nav-link:focus {
         color: var(--bs-gray-300, #dee2e6);
     }
-
-
 }
 [data-bs-theme=dark] {
-    @include local_darkmodecode;
+    color-scheme: dark;
+    @include darkmodecode;
 }
 //
 // theme classic
