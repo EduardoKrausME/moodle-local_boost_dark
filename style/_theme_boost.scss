@@ -1,0 +1,8 @@
+@mixin local_darkmode_theme_boost {
+    .kraus-layout-dark .light-mode svg path {
+        // color: var(--bs-link-color, #98b6d9) !important;
+    }
+}
+[data-bs-theme=dark] {
+    @include local_darkmode_theme_boost;
+}

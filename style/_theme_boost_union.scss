@@ -1,0 +1,36 @@
+@mixin local_darkmode_theme_boost_union {
+    .form-autocomplete-selection [data-active-selection=true] {
+        box-shadow: none;
+    }
+    a.dimmed,
+    a.dimmed:link,
+    a.dimmed:visited,
+    a.dimmed_text,
+    a.dimmed_text:link,
+    a.dimmed_text:visited,
+    .dimmed_text,
+    .dimmed_text a,
+    .dimmed_text a:link,
+    .dimmed_text a:visited,
+    .usersuspended,
+    .usersuspended a,
+    .usersuspended a:link,
+    .usersuspended a:visited,
+    .dimmed_category,
+    .dimmed_category a {
+        color: var(--bs-gray-500, #ADB5BD);
+    }
+    @media (min-width: 1200px) and (max-width: 1600px) {
+        #course-category-listings.columns-3 {
+            background-color: transparent;
+            #category-listing > div,
+            #course-listing > div,
+            #course-detail > div {
+                background-color: transparent;
+            }
+        }
+    }
+}
+[data-basename=boost_union][data-bs-theme=dark] {
+    @include local_darkmode_theme_boost_union;
+}

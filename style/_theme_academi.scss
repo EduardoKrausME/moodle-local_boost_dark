@@ -1,0 +1,60 @@
+@mixin local_darkmode_theme_academi {
+    .kraus-layout-dark .dark-mode path {
+        fill: var(--bs-white, #FFF);
+    }
+    .moremenu .nav.nav-tabs .nav-item .nav-link {
+        background: rgba(var(--bs-gray-300-rgb, 222, 226, 230), .18);
+    }
+    .block .card-body .content:not(.activityiconcontainer) {
+        background: var(--bs-transparent, #00000000);
+    }
+    #region-main {
+        background-color: var(--bs-transparent, #00000000) !important;
+    }
+    .login-container {
+        background-color: var(--bs-gray-1100, #0E0E11);
+    }
+    .pagelayout-frontpage #frontpage-available-course-list,
+    .pagelayout-frontpage #site-news-forum,
+    #frontpage-course-list {
+        background: var(--bs-transparent, #00000000);
+        background-color: var(--bs-transparent, #00000000);
+    }
+    #frontpage-available-course-list .coursebox,
+    #frontpage-course-list .coursebox,
+    .course-search-result .coursebox {
+        background: rgba(var(--bs-white-rgb, 255, 255, 255), .07);
+        border-bottom: none;
+    }
+    #frontpage-available-course-list,
+    #frontpage-course-list,
+    #frontpage-category-combo,
+    #frontpage-category-names,
+    #site-news-forum {
+        background: rgba(var(--bs-white-rgb, 255, 255, 255), .07);
+        border-bottom: none;
+    }
+    .pagelayout-frontpage #page #page-content .box form {
+        border: none;
+    }
+    .breadcrumb {
+        > li {
+            // background-color: var(--bs-gray-700, #495057);
+            background: transparent;
+            a {
+                color: var(--bs-gray-200, #E9ECEF);
+            }
+        }
+        .breadcrumb-item:last-child {
+            color: var(--bs-white, #FFF);
+            // background: var(--bs-gray-800, #393e4f);
+            background: transparent;
+            &:after {
+                border-left: 20px solid var(--bs-gray-800, #393E4F);
+            }
+        }
+    }
+}
+[data-bs-theme=dark] {
+    @include local_darkmode_theme_academi;
+}

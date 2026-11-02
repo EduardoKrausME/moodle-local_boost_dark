@@ -1,0 +1,8 @@
+@mixin local_darkmode_theme_classic {
+    .navbar-bootswatch {
+        background-color: var(--bs-black, #000);
+    }
+}
+[data-bs-theme=dark] {
+    @include local_darkmode_theme_classic;
+}

@@ -1,0 +1,18 @@
+@mixin local_darkmode_theme_adaptable {
+    background-color: var(--bs-gray-1100, #0E0E11);
+    .breadcrumb {
+        background-color: rgba(var(--bs-gray-100-rgb, 248, 249, 250), .11);
+    }
+    .secondary-navigation {
+        background-color: rgba(var(--bs-white-rgb, 255, 255, 255), .11);
+    }
+    #adaptable-page-header-wrapper #main-navbar {
+        background-color: var(--bs-main-navbar-background, #393E4F);
+    }
+    #notice.box {
+        background-color: rgba(var(--bs-gray-300-rgb, 222, 226, 230), .15);
+    }
+}
+[data-bs-theme=dark] {
+    @include local_darkmode_theme_adaptable;
+}
