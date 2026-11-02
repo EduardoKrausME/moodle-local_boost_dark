@@ -1078,6 +1078,15 @@
     .navbar-light .navbar-nav .nav-link:focus {
         color: var(--bs-gray-300, #DEE2E6);
     }
+    // Replace Boost's default link underlines in dark mode with a subtle.
+    #page-header,
+    #region-main,
+    #page-footer,
+    .block_html .card-text {
+        a:not(.btn):not(.nav-link):not(.dropdown-item):not(.list-group-item):not(.page-link) {
+            text-decoration: none !important;
+        }
+    }
 }
 [data-bs-theme=dark] {
     color-scheme: dark;

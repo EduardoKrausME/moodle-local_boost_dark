@@ -1261,6 +1261,12 @@
 [data-bs-theme=dark] .navbar-light .navbar-nav .nav-link:focus {
   color: var(--bs-gray-300, #DEE2E6);
 }
+[data-bs-theme=dark] #page-header a:not(.btn):not(.nav-link):not(.dropdown-item):not(.list-group-item):not(.page-link),
+[data-bs-theme=dark] #region-main a:not(.btn):not(.nav-link):not(.dropdown-item):not(.list-group-item):not(.page-link),
+[data-bs-theme=dark] #page-footer a:not(.btn):not(.nav-link):not(.dropdown-item):not(.list-group-item):not(.page-link),
+[data-bs-theme=dark] .block_html .card-text a:not(.btn):not(.nav-link):not(.dropdown-item):not(.list-group-item):not(.page-link) {
+  text-decoration: none !important;
+}
 
 [data-bs-theme=dark] .navbar-bootswatch {
   background-color: var(--bs-black, #000);
