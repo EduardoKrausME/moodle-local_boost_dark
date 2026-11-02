@@ -2,6 +2,22 @@
 
 This changelog covers only the two most recent published GitHub releases. Each entry describes changes included in the corresponding tagged release, not later changes on the `master` branch.
 
+## 1.4.7 - 2026-11-02
+
+- Replaced Boost's default link underlines in dark mode with subtler link styling.
+- Updated the Moodle 5.x front-page course icon background treatment and refreshed the generated stylesheet.
+- Removed installation instructions from the README.
+
+**Full comparison:** [1.4.7](https://github.com/EduardoKrausME/moodle-local_boost_dark/releases/tag/1.4.7)
+
+## 1.4.6 - 2026-10-26
+
+- Refactored dark-mode SCSS into a shared partial and consolidated its inclusion in the dark-mode mixin.
+- Adjusted the tiled course-icon presentation behind course names on the Moodle 5.x front page.
+- Updated the documentation and generated CSS for the SCSS changes.
+
+**Full comparison:** [1.4.6](https://github.com/EduardoKrausME/moodle-local_boost_dark/releases/tag/1.4.6)
+
 ## 1.4.5 - 2026-10-19
 
 ### Fixed
