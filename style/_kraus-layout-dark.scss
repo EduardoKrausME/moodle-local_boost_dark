@@ -445,11 +445,6 @@
         background-color: var(--bs-gray-1000, #1E1E25);
         opacity: .7;
     }
-    .form-control:focus {
-        color: var(--bs-gray-400, #CED4DA) !important;
-        background-color: var(--bs-gray-800, #393E4F);
-        border-color: none;
-    }
     .btn-primary,
     .addtagcoll a,
     .path-admin-tag .addstandardtags a,

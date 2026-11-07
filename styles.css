@@ -550,11 +550,6 @@
   background-color: var(--bs-gray-1000, #1E1E25);
   opacity: 0.7;
 }
-[data-bs-theme=dark] .form-control:focus {
-  color: var(--bs-gray-400, #CED4DA) !important;
-  background-color: var(--bs-gray-800, #393E4F);
-  border-color: none;
-}
 [data-bs-theme=dark] .btn-primary,
 [data-bs-theme=dark] .addtagcoll a,
 [data-bs-theme=dark] .path-admin-tag .addstandardtags a,
