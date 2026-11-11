@@ -917,8 +917,7 @@
   color: var(--bs-text-color, #CBD0D4);
   border-color: var(--bs-gray-700, #495057);
 }
-[data-bs-theme=dark] .drawer .drawerheader .draweractions .btn:hover,
-[data-bs-theme=dark] .drawer .drawerheader .draweractions .btn:focus-visible {
+[data-bs-theme=dark] .drawer .drawerheader .draweractions .btn:hover, [data-bs-theme=dark] .drawer .drawerheader .draweractions .btn:focus-visible {
   background-color: var(--bs-gray-700, #495057);
   color: var(--bs-white, #FFF);
 }
