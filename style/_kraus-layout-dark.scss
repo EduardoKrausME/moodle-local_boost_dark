@@ -677,6 +677,21 @@
     }
     .drawer {
         background: var(--bs-gray-800, #393E4F);
+        // The course index and drawer close actions keep their light theme background.
+        .drawerheader .draweractions .btn {
+            background-color: var(--bs-gray-900, #2E3134);
+            color: var(--bs-text-color, #CBD0D4);
+            border-color: var(--bs-gray-700, #495057);
+            &:hover,
+            &:focus-visible {
+                background-color: var(--bs-gray-700, #495057);
+                color: var(--bs-white, #FFF);
+            }
+            // Moodle's sidebar SVG icons are rendered as images, not font icons.
+            &.drawertoggle img.icon {
+                filter: brightness(0) invert(1);
+            }
+        }
     }
     .modal-dialog.modchooser {
         .modal-footer {
@@ -694,6 +709,14 @@
         .activity-item.hiddenactivity {
             background-color: rgba(var(--bs-gray-100-rgb, 248, 249, 250), .17);
         }
+    }
+    // LearnLingo gives course sections white card backgrounds and light borders.
+    // Override only the visual colours; retain its spacing and rounded corners.
+    body.path-course-view .course-section {
+        background: var(--bs-gray-900, #2E3134);
+        border-color: var(--bs-gray-800, #393E4F);
+        box-shadow: 0 4px 0 var(--bs-gray-1100, #212529);
+        color: var(--bs-text-color, #CBD0D4);
     }
     .course-section {
         .section-item {
