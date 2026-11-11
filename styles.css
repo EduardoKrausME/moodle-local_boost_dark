@@ -912,6 +912,19 @@
 [data-bs-theme=dark] .drawer {
   background: var(--bs-gray-800, #393E4F);
 }
+[data-bs-theme=dark] .drawer .drawerheader .draweractions .btn {
+  background-color: var(--bs-gray-900, #2E3134);
+  color: var(--bs-text-color, #CBD0D4);
+  border-color: var(--bs-gray-700, #495057);
+}
+[data-bs-theme=dark] .drawer .drawerheader .draweractions .btn:hover,
+[data-bs-theme=dark] .drawer .drawerheader .draweractions .btn:focus-visible {
+  background-color: var(--bs-gray-700, #495057);
+  color: var(--bs-white, #FFF);
+}
+[data-bs-theme=dark] .drawer .drawerheader .draweractions .btn.drawertoggle img.icon {
+  filter: brightness(0) invert(1);
+}
 [data-bs-theme=dark] .modal-dialog.modchooser .modal-footer {
   display: none;
 }
@@ -923,6 +936,12 @@
 }
 [data-bs-theme=dark] .course-content .activity-item.hiddenactivity {
   background-color: rgba(var(--bs-gray-100-rgb, 248, 249, 250), 0.17);
+}
+[data-bs-theme=dark] body.path-course-view .course-section {
+  background: var(--bs-gray-900, #2E3134);
+  border-color: var(--bs-gray-800, #393E4F);
+  box-shadow: 0 4px 0 var(--bs-gray-1100, #212529);
+  color: var(--bs-text-color, #CBD0D4);
 }
 [data-bs-theme=dark] .course-section .section-item {
   border-color: rgba(var(--bs-gray-300-rgb, 222, 226, 230), 0.35);
