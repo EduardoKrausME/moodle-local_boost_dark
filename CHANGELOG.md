@@ -1,6 +1,22 @@
 # Changelog
 
-This changelog covers only the two most recent published GitHub releases. Each entry describes changes included in the corresponding tagged release, not later changes on the `master` branch.
+This changelog documents published GitHub releases using changes verified between consecutive published release tags.
+
+## 1.4.10 - 2026-11-11
+
+- Corrected dark-mode colors and hover/focus states for drawer header action buttons and course-index drawer icons.
+- Adjusted LearnLingo course section card backgrounds, borders, shadows and text colors in dark mode.
+- Synchronized generated CSS with the SCSS changes.
+
+**Full comparison:** [1.4.9...1.4.10](https://github.com/EduardoKrausME/moodle-local_boost_dark/compare/1.4.9...1.4.10)
+
+## 1.4.9 - 2026-11-07
+
+- Split theme-specific dark-mode styling into dedicated SCSS partials for Academi, Adaptable, Boost, Boost Union and Classic.
+- Refined dark-mode styling for block controls, My Overview sorting and FlexiTour popovers, and removed a custom focused form-control override.
+- Rebuilt the compiled CSS and updated the SCSS imports.
+
+**Full comparison:** [1.4.7...1.4.9](https://github.com/EduardoKrausME/moodle-local_boost_dark/compare/1.4.7...1.4.9)
 
 ## 1.4.7 - 2026-11-02
 
