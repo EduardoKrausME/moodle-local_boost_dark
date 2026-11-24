@@ -2,6 +2,13 @@
 
 This changelog documents published GitHub releases using changes verified between consecutive published release tags.
 
+## 1.4.11 - 2026-11-24
+
+- Added a security reporting policy with coordinated vulnerability disclosure guidance.
+- Updated release metadata; no functional dark-mode changes were made in this tag.
+
+**Comparison:** [1.4.10...1.4.11](https://github.com/EduardoKrausME/moodle-local_boost_dark/compare/1.4.10...1.4.11)
+
 ## 1.4.10 - 2026-11-11
 
 - Corrected dark-mode colors and hover/focus states for drawer header action buttons and course-index drawer icons.
